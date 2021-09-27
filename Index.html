@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>Practica N3</title>
+</head>
+
+<body>
+    <div class="text1">
+        <p>Window Name</p>
+    </div>
+
+    <header>
+        <h1>
+            Sistema integrado de gestión
+        </h1>
+        <p>
+            <img id=avatar src="avatar.jpg" alt="avatar">usuario1
+        </p>
+
+    </header>
+
+    <nav>
+        <form action="" id=navegacion>
+            <label for="textbuscar"> Buscar en la web </label>
+            <input type="search">
+            <button type="submit" id="Buscar">
+                <img src="search.png">
+                </br>
+                Buscar
+            </button>
+        </form>
+    </nav>
+
+    <aside>
+        <h2>Menú</h2>
+        <section id="seccion">
+            <article>
+                Agregar Producto
+            </article>
+
+            <input type="image" src="plus.png">
+        </section>
+        <section id="seccion">
+            <article>
+                Administrar categorías
+            </article>
+            <input type="image" src="note.png">
+
+        </section>
+        <section id="seccion">
+            <article>
+                Existencias
+            </article>
+            <input type="image" src="coin.png">
+
+        </section>
+        <section id="seccion">
+            <article>
+                Administrar pagos
+            </article>
+            <input type="image" src="card.png">
+
+        </section>
+
+    </aside>
+    <main>
+        <form action="miservidor.com" method="POST">
+
+            <fieldset class=formulario>
+
+                <legend> Agregar Producto </legend>
+                <label for="codigo">Código* </label>
+                <input type="tel" name="codigo" id="codigo" minlength="6" maxlength="6" pattern="[0-9]{6}"
+                    placeholder="Sólo números" required>
+                <input type="button" value="Validar">
+
+                <br />
+
+                <label for="Nombre">Nombre* </label>
+                <input type="text" id="nombre" minlength="2" maxlength="100" pattern="[a-zA-Z]{2,10}"
+                    placeholder="Sólo letras y números" required>
+                <br />
+
+                <label for="abreviatura">Abreviatura </label>
+                <input type="text" id="abreviatura" minlength="2" maxlength="10" pattern="[a-zA-Z]{2,10}"
+                    placeholder="Sólo letras">
+                <br />
+
+                <label for="categoria">Categoría* </label>
+                <select name="categoria" id="categoria" required>
+                    <option value="lacteos">Lácteos</option>
+                    <option value="panes especiales">Panes especiales</option>
+                    <option value="pasteles">Pasteles</option>
+                </select>
+                <br />
+
+                <label for="ruc-proveedor">RUC Proveedor* </label>
+                <input type="tel" name="ruc" id="ruc" minlength="11" maxlength="11" pattern="[0-9]{11}"
+                    placeholder="Sólo números" required>
+
+                <br />
+                <label for="precio">Precio* </label>
+                <input type="number" id="precio" step="0.01" value="3" required>
+
+                <br />
+
+                <label for="color-de-etiqueta">Color de etiqueta </label>
+                <input type="color" name="color-de-etiqueta" id="color-de-etiqueta">
+
+                <br />
+
+                <label for="fecha">Fecha *</label>
+                <input type="date" id="fecha">
+
+                <br />
+
+                <label for="Estado">Estado* </label>
+
+                <input type="radio" name="estado" id="estado-activo">Activo
+                <input type="radio" name="estado" id="estado-suspendido">Suspendido
+                <input type="radio" name="estado" id="estado-de-baja">Baja
+
+                <br />
+
+                <label for="afecto-a-impuesto">Afecto a impuesto* </label>
+                <input type="checkbox" name="afecto-a-impuesto" id="afecto-a-impuesto" required>
+
+                <br />
+
+                <label for="foto">Foto </label>
+                <input type="file" id="foto" accept="image/png , image/jpg">
+
+                <br />
+
+                <label for="descripcion"> Descripción </label>
+                <textarea name="descripcion" cols="50" rows="5"></textarea>
+
+                <br />
+
+                <button type="submit"> Grabar </button>
+
+                <button type="reset"> Reset </button>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://www.google.com/?hl=es">¿Qué hacemos?</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.google.com/?hl=es">Enlaces principales</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.google.com/?hl=es">Contáctanos</a></li>
+        </ul>
+
+    </footer>
+
+    <div class="text2">
+        <p></p>
+    </div>
+
+</body>
+
+</html>
